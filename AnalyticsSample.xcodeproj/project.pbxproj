@@ -26,6 +26,7 @@
 		FE0EEF27207D01C500B43E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0EEF2A207D01C500B43E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE0EEF2C207D01C500B43E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3B430B207D106000CF3924 /* AnalyticsSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnalyticsSample-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 				FE0EEF27207D01C500B43E3E /* Assets.xcassets */,
 				FE0EEF29207D01C500B43E3E /* LaunchScreen.storyboard */,
 				FE0EEF2C207D01C500B43E3E /* Info.plist */,
+				FE3B430B207D106000CF3924 /* AnalyticsSample-Bridging-Header.h */,
 			);
 			path = AnalyticsSample;
 			sourceTree = "<group>";
@@ -123,6 +125,7 @@
 				TargetAttributes = {
 					FE0EEF1C207D01C200B43E3E = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -359,6 +362,7 @@
 			baseConfigurationReference = 66CF321F90F122CBBF4B6044 /* Pods-AnalyticsSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VSX7764QF2;
 				INFOPLIST_FILE = AnalyticsSample/Info.plist;
@@ -369,6 +373,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nanao-a.AnalyticsSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnalyticsSample/AnalyticsSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,6 +385,7 @@
 			baseConfigurationReference = 08AB4184E6F6D73E05526727 /* Pods-AnalyticsSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VSX7764QF2;
 				INFOPLIST_FILE = AnalyticsSample/Info.plist;
@@ -389,6 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nanao-a.AnalyticsSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnalyticsSample/AnalyticsSample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
